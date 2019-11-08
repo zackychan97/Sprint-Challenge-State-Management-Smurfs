@@ -6,7 +6,7 @@ import Smurfs from "./Smurfs";
 const RenderSmurfs = props => {
   useEffect(() => {
     props.fetchSmurfsData();
-    console.log("SMURF DATA: ", props.fetchSmurfsData);
+    console.log("THE SMURF DATA: ", props.fetchSmurfsData);
   }, []);
 
   return (
@@ -26,6 +26,7 @@ const RenderSmurfs = props => {
             name={smurf.name}
             age={smurf.age}
             height={smurf.height}
+            id={smurf.id}
           />
         ))}
     </div>
